@@ -79,7 +79,6 @@ advertisement-project/
 - **API 개발팀**: 광고 조회 API (3-5ms 최적화), 캠페인 관리, Redis 캐시 처리
 - **Flink 개발팀**: 통합 스트림 처리 (RTB 계산 + 클릭 처리 + 전환 매칭)
 - **Worker 개발팀**: 성과 리포트, 배치 정산, 데이터 동기화
-- **인프라팀**: Kubernetes, Redis, Kafka 클러스터 운영 및 모니터링
 
 ### 🎯 핵심 최적화 전략
 - **Cache First**: 95% Cache Hit로 초고속 응답
@@ -91,7 +90,6 @@ advertisement-project/
 - **ERD 다이어그램**: 시각적 데이터 모델링으로 테이블 관계 명확화
 - **수익률 추적**: revenue_amount 필드로 정확한 ROAS 계산
 - **정책 시나리오**: 주문 취소, 중복 주문 등 예외 상황 처리 방안 정립
-- **토픽 최적화**: conversion-events → order.completed로 명확한 네이밍
 
 ## 문서화
 
@@ -110,35 +108,3 @@ advertisement-project/
 - [Flink 구현 가이드](docs/3.%20체크리스트/3-3.%20구현체크리스트_Flink.md) - 통합 스트림 처리
 - [Worker 구현 가이드](docs/3.%20체크리스트/3-4.%20구현체크리스트_Worker.md) - 배치 작업
 - [선행데이터 체크리스트](docs/3.%20체크리스트/3-1.%20선행데이터_체크리스트.md) - 정책 결정 및 시나리오 분석
-
-## 시작하기
-
-### 📋 사전 요구사항
-- Java 11+, Maven 3.8+
-- Redis 7.0+, Kafka 3.0+
-- Apache Flink 1.17+
-- PostgreSQL 14+
-
-### 🚀 빠른 시작
-```bash
-# 저장소 클론
-git clone https://github.com/your-org/advertisement-project.git
-cd advertisement-project
-
-# 의존성 설치 및 빌드
-mvn clean install
-
-# 개발 환경 실행
-docker-compose up -d
-```
-
-### 📊 핵심 지표 모니터링
-- **응답 시간**: 광고 조회 API 3-5ms 목표
-- **처리량**: 초당 10,000+ 광고 요청 처리
-- **정확도**: 클릭-전환 매칭 99.9% 정확도
-- **가용성**: 99.99% 서비스 가용성
-
----
-
-**📞 문의사항이나 기여를 원하시면 Issues나 Pull Request를 통해 참여해주세요!**
-
