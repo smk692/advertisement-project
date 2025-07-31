@@ -49,4 +49,7 @@ Thumbs.db
 
 # Application specific
 *.pid
-*.port 
+*.port
+
+# Documents
+docs/광고 노출 logic 정리.pdf 
