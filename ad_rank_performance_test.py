@@ -159,7 +159,7 @@ def generate_sample_data() -> Dict[str, List[ProductData]]:
         ProductData("삼성 갤럭시북18", 5400, 6.8, 2900, 11),
         ProductData("삼성 갤럭시북19", 5600, 6.9, 3000, 11),
         ProductData("삼성 갤럭시북20", 5800, 7.0, 3100, 12),
-        ProductData("삼성 갤럭시북21", 6000, 7.1, 3200, 12),
+        ProductData("삼성 갤럭시북21", 60000, 7.1, 3200, 12),
         
         # LG 노트북 (15개)
         ProductData("LG 그램2", 1900, 4.9, 1150, 2),
